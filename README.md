@@ -100,42 +100,53 @@ Reasoning disabled.
 
 
 protocol/
-padp_v4.json
+└── padp_v4.json # protocol specification
 
 scripts/
-run_protocol.py
-extract_survivors.py
-jsonl_to_csv.py
+├── run_protocol.py # run PADP experiments
+├── extract_survivors.py # extract terminal survivors
+└── jsonl_to_csv.py # flatten logs for analysis
 
 results/
-raw/
-survivors/
+├── raw/ # raw JSONL experiment logs
+└── survivors/ # filtered terminal states
 
-analysis/
+analysis/ # notebooks / plots / basin analysis
 
 
 ---
 
 ## Running the Protocol
 
-```bash
+Install dependencies:
+
+
 pip install -r requirements.txt
 
-python scripts/run_protocol.py \
-  --model anthropic/claude-opus-4.6 \
-  --baseline literary \
-  --temp 1.3
 
-Results saved as JSONL logs.
+Run a single experiment:
 
-Status
 
-Protocol finalized
-Runs ongoing (252+ completed)
-Residual basin analysis in progress
+python scripts/run_protocol.py
+--model anthropic/claude-opus-4.6
+--baseline literary
+--temp 1.3
 
-Dataset will be released after full run.
 
-License
+Results are saved as **JSONL logs** in the `results/raw/` directory.
+
+---
+
+## Status
+
+- Protocol finalized  
+- 252+ runs completed  
+- Residual basin analysis in progress  
+
+Dataset will be released after the full run.
+
+---
+
+## License
 
 MIT
