@@ -98,24 +98,21 @@ Reasoning disabled.
 
 ## Repository Structure
 
-
+<pre>
 protocol/
-
-└── padp_v4.json # protocol specification
+  └── padp_v4.json                # protocol specification
 
 scripts/
-
-├── run_protocol.py # run PADP experiments
-├── extract_survivors.py # extract terminal survivors
-└── jsonl_to_csv.py # flatten logs for analysis
+  ├── run_protocol.py             # run PADP experiments
+  ├── extract_survivors.py        # extract terminal survivors
+  └── jsonl_to_csv.py            # flatten logs for analysis
 
 results/
+  ├── raw/                        # raw JSONL experiment logs
+  └── survivors/                  # filtered terminal states
 
-├── raw/ # raw JSONL experiment logs
-└── survivors/ # filtered terminal states
-
-analysis/ # notebooks / plots / basin analysis
-
+analysis/                          # notebooks / plots / basin analysis
+</pre>
 
 ---
 
