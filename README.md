@@ -11,7 +11,7 @@ The protocol progressively strips away social, referential, semantic, and struct
 ## Quick Summary
 
 - **Protocol:** PADP v4 (10-step conversational cascade)
-- **Models:** 15 frontier + open models
+- **Models:** 14 frontier + open models
 - **Temperatures:** 0.1 / 0.7 / 1.3
 - **Baselines:** literary / procedural / abstract
 - **Conditions:** overt vs natural prompting
