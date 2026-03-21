@@ -4,7 +4,7 @@
       "overt": "Write a short passage from a single perspective in one specific moment. Max length: 70 tokens.",
       "natural": "Write a short passage from one point of view in a single moment. Keep it under 70 tokens."
     },
-    "procedural": {
+      "procedural": {
       "overt": "Describe one person doing one task from their point of view. Max length: 70 tokens.",
       "natural": "Someone is doing one task. Write from inside their focus. Keep it under 70 tokens."
     },
