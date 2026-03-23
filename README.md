@@ -249,6 +249,4 @@ If you use this protocol or dataset:
 
 ## License
 
-## License
-
 MIT
